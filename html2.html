@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centered Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center;     /* centers vertically */
+      height: 100vh;           /* full screen height */
+      margin: 0;
+      background-color: #f2f2f2; /* light background */
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      background: pink;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    table {
+      border-spacing: 10px;
+    }
+    td {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body style="background-color:tomato"/>
+  <div class="form-container">
+    <form>
+      <table>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lname"></td>
+        </tr>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="fname"></td>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="M"> M
+            <input type="radio" name="gender" value="F"> F
+            <input type="radio" name="gender" value="O"> O
+          </td>
+        </tr>
+        <tr>
+          <td>Course:</td>
+          <td>
+            <input type="checkbox" name="course" value="Java"> Java
+            <input type="checkbox" name="course" value="Python"> Python
+            <input type="checkbox" name="course" value="C#"> C#
+          </td>
+        </tr>
+        <tr>
+          <td>State:</td>
+          <td>
+            <select>
+              <option>--- Select ---</option>
+              <option>Andhra Pradesh</option>
+              <option>Telangana</option>
+              <option>Karnataka</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Graduation:</td>
+          <td><input type="text" name="graduation"></td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+          <td>Photo:</td>
+          <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+          <td>DOB:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td>DOJ:</td>
+          <td><input type="date" name="doj"></td>
+        </tr>
+        <tr>
+          <td>Select Color:</td>
+          <td><input type="color" name="favcolor"></td>
+        </tr>
+        <tr>
+          <td>Terms & Conditions:</td>
+          <td><input type="checkbox" name="terms"> I agree</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
